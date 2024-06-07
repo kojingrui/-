@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>某人的华语作文</title>
+    <style>
+        #hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>某人的华语作文</h1>
+    <label for="password">输入密码:</label>
+    <input type="password" id="password" name="password">
+    <br>
+    <h6>*密码随时会改哦！想要密码，请联系https://t.me/justkeepmequiet</h6> <br>
+    <button onclick="checkPassword()">Submit</button>
+    <div id="hidden-content">
+        <h2>点击下面下载，谢谢光临！</h2>
+        <a href="某人的华语作文.rar" download>
+            <h1>点击这里！这里这里这里这里这里！</h1>
+        </a>
+    </div>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = 'aabbcc'; // Set your password here
+            if (password === correctPassword) {
+                document.getElementById('hidden-content').style.display = 'block';
+            } else {
+                alert('错误密码，菜就多练，玩不起就不要玩，以前是以前，现在是现在。要是你一直把以前当做现在，哥们，你怎么不拿你刚出生的时候做对比啊？');
+            }
+        }
+    </script>
+</body>
+
+</html>
